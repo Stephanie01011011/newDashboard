@@ -1,6 +1,6 @@
 body{
     margin: 0;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Main divs*/
@@ -11,7 +11,7 @@ body{
 }
 .sidebar{
     z-index: 2;
-    background-color: #6082B6;
+    background-color: #4169E1;
     grid-row-start: 1;
     grid-row-end: 6;
     display: grid;
@@ -19,7 +19,7 @@ body{
 }
 .header{
     display: grid;
-    box-shadow: 0 5px 6px -3px grey;    
+    box-shadow: 0 5px 6px -3px rgb(151, 149, 149);    
     grid-template-rows: 50% 50%;
     background-color: white;
     z-index: 1;
@@ -29,7 +29,7 @@ body{
     z-index: -2;
     grid-row-start: 2;
     grid-row-end: 6;
-    background-color: #D3D3D3;
+    background-color: #E8EAFF;
     display: grid;
     grid-template-columns: 75% 25%;
 }
@@ -65,6 +65,7 @@ body{
 }
 .nav-item{
     display: flex;
+    margin-left: 20px;
 }
 
 .nav-2{
@@ -90,13 +91,40 @@ body{
     display: flex;
 }
 .info{
-    background-color: red;
+    display: flex;
+}
+.info p{
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.profile-img-info{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.profile-img-info img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+.notification-btn{
+    margin-top: 18px;
+    margin-left: 100px;
 }
 .bio{
     display: flex;
 }
 .buttons{
-    background-color: green;
+    
+}
+.buttons button{
+    width: 100px;
+    height: 30px;
+    background-color: #4169E1;
+    border-radius: 40px;
+    border-style: none;
+    margin: 10px;
+    color: white;
 }
 .search-icon{
     margin-left: 30px;
@@ -107,8 +135,8 @@ body{
     margin-top: 20px;
 }
 #searchbar{
-    background-color: #ccdffb;
-    width: 500px;
+    background-color: #E8EAFF;
+    width: 550px;
     height: 20px;
     border-radius: 10px;
     border-style: none;
@@ -117,10 +145,14 @@ body{
     
     
 }
+.bio p{
+    margin-left: 10px;
+}
 .profile-img img{
    height: 60px;
    width: 60px;
    border-radius: 90px;
+   margin-left: 30px;
 }
 
 /*divs inside main*/
@@ -143,12 +175,25 @@ body{
 
 /*boxes inside of main box 1*/
 #cardtemplate{
-    background-color: white;
+    background-image: url(images/greencard.png);
     width: 330px;
     height: 160px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px 4px 0.5px grey;
     
+}
+.text{
+    margin-left: 20px;
+}
+.text p{
+    margin-top: -20px;
+}
+.icons{
+    margin-left: 200px;
+}
+.icons i{
+    margin-left: 10px;
 }
 
 .projects-text{
@@ -165,7 +210,19 @@ body{
     width: 230px;
     height: 240px;
     border-radius: 5px;
+    box-shadow: 0.5px 0.5px 4px 0.5px grey;
     
+}
+.announcements-box p{
+    font-size: 11px;
+    margin-top: -20px;
+}
+.announcements-box p,h5{
+    margin-left: 10px;
+}
+hr{
+    margin: 2px;
+    opacity: 20%;
 }
 .announcements-text{
     
@@ -178,7 +235,22 @@ body{
     width: 230px;
     height: 240px;
     border-radius: 5px;
-    
+    box-shadow: 0.5px 0.5px 4px 0.5px grey;
     
    
+}
+.trends{
+    display: flex;
+    margin-left: 10px;
+
+}
+.trends p{
+    font-size: 12px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.trends img{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
 }
