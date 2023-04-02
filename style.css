@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+
+}
+
+/*Main divs*/
+.container{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+}
+.sidebar{
+    z-index: 2;
+    background-color: #6082B6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    display: grid;
+    grid-template-rows: 15vh 42.5vh 42.5vh
+}
+.header{
+    display: grid;
+    box-shadow: 0 5px 6px -3px grey;    
+    grid-template-rows: 50% 50%;
+    background-color: white;
+    z-index: 1;
+    
+}
+.main{
+    z-index: -2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: #D3D3D3;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+/*divs inside sidebar*/
+.logodiv{
+    display: flex;
+    margin: 5px;
+}
+.logoimg{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+.logotext{
+    margin-left: 5px;
+    font-size: 30px;
+    color: white;
+}
+.nav-1{
+    
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav-1 a{
+    text-decoration: none;
+    color: white;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: white;
+}
+.nav-item{
+    display: flex;
+}
+
+.nav-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 5px;
+}
+
+/*divs inside header*/
+.header-box-1{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+}
+.header-box-2{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+}
+.search{
+    
+    display: flex;
+}
+.info{
+    background-color: red;
+}
+.bio{
+    display: flex;
+}
+.buttons{
+    background-color: green;
+}
+.search-icon{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.search-bar{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#searchbar{
+    background-color: #ccdffb;
+    width: 500px;
+    height: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+.profile-img{
+    
+    
+}
+.profile-img img{
+   height: 60px;
+   width: 60px;
+   border-radius: 90px;
+}
+
+/*divs inside main*/
+.main-box-1{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 7% 31% 31% 31%;
+    margin-left: 30px;
+    
+
+
+}
+.main-box-2{
+    margin-left: 10px;
+    display: grid;
+    grid-template-rows: 7% 43% 7% 43%;
+    
+}
+
+/*boxes inside of main box 1*/
+#cardtemplate{
+    background-color: white;
+    width: 330px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+
+.projects-text{
+    margin-left: 5px;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   
+}
+
+
+/*Divs inside main-box-2*/
+.announcements-box{
+    background-color: white;
+    width: 230px;
+    height: 240px;
+    border-radius: 5px;
+    
+}
+.announcements-text{
+    
+}
+.trending-text{
+    
+}
+.trending-box{
+    background-color: white;
+    width: 230px;
+    height: 240px;
+    border-radius: 5px;
+    
+    
+   
+}
